@@ -8,9 +8,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-4">
-            <Link href="/" className="flex flex-col inline-block">
-              <span className="text-3xl font-serif font-bold text-white">RevTech</span>
-              <span className="text-xs uppercase tracking-widest text-primary-foreground/70 font-medium">Template Properti & Pariwisata</span>
+            <Link href="/" className="flex items-center gap-3 inline-flex">
+              <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center font-bold text-2xl shadow-lg text-primary-900 shrink-0">
+                R
+              </div>
+              <div className="flex flex-col">
+                <span className="text-3xl font-serif font-bold text-white leading-none">RevTech</span>
+                <span className="text-xs uppercase tracking-widest text-primary-foreground/70 font-medium leading-tight mt-1.5">Template Properti & Pariwisata</span>
+              </div>
             </Link>
             <p className="text-sm text-primary-foreground/80 max-w-sm mt-4 leading-relaxed">
               Menghadirkan pengalaman digital premium untuk bisnis properti dan pariwisata yang mengutamakan keindahan alam dan hunian eksklusif.

@@ -28,9 +28,14 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <Link href="/" className="flex flex-col">
-            <span className={`text-2xl font-serif font-bold ${isScrolled ? 'text-primary' : 'text-white'}`}>RevTech</span>
-            <span className={`text-[0.65rem] uppercase tracking-widest font-medium ${isScrolled ? 'text-muted-foreground' : 'text-white/80'}`}>Template Properti & Pariwisata</span>
+          <Link href="/" className="flex items-center gap-3">
+            <div className={`w-10 h-10 rounded-xl flex items-center justify-center font-bold text-xl shadow-lg transition-colors duration-500 ${isScrolled ? 'bg-primary text-white shadow-primary/20' : 'bg-white text-primary shadow-black/10'}`}>
+              R
+            </div>
+            <div className="flex flex-col">
+              <span className={`text-2xl font-serif font-bold leading-none ${isScrolled ? 'text-primary' : 'text-white'}`}>RevTech</span>
+              <span className={`text-[0.65rem] uppercase tracking-widest font-medium leading-tight mt-1 ${isScrolled ? 'text-muted-foreground' : 'text-white/80'}`}>Template Properti & Pariwisata</span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
